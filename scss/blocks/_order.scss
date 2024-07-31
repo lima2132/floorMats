@@ -1,0 +1,138 @@
+.order {
+	padding: 42px 20px 10px 20px;
+	&__bg {
+		background: url(../img/order__bg.png) center center / cover no-repeat;
+		background-size: 65%;
+	}
+	&__logo {
+		display: none;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__title {
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 59px;
+		width: auto;
+	}
+	&__text {
+		margin-top: 20px;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 28px;
+	}
+	&__button {
+		margin-top: 15px;
+		color: white;
+		padding: 15px;
+		width: 179px;
+		font-size: 20px;
+		font-weight: 900;
+		line-height: 23px;
+		border-radius: 7px;
+		background: linear-gradient(
+			135.87deg,
+			rgb(185, 1, 96) 2.23%,
+			rgb(46, 49, 146) 99.506%
+		);
+	}
+}
+.contacts {
+	padding-right: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+	}
+	&__link {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 21px;
+		text-align: center;
+		color: #737373;
+	}
+}
+
+@media (max-width: 1000px) {
+	.order {
+		padding: 42px 0 10px 40px;
+		&__title {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		&__image {
+			width: 368px;
+			height: 473px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.order {
+		&__bg {
+			background-position: left;
+			background-size: 100%;
+		}
+		&__logo {
+			margin-top: 20px;
+			display: block;
+		}
+		&__title {
+			margin-top: 40px;
+		}
+		&__wrapper {
+			align-items: start;
+		}
+	}
+	.contacts {
+		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.order {
+		&__wrapper {
+			align-items: center;
+		}
+		&__logo {
+			margin-top: 0;
+		}
+		&__title {
+			font-size: 25px;
+			line-height: 25px;
+		}
+		&__image {
+			width: 350px;
+			height: 428px;
+		}
+	}
+}
+@media (max-width: 660px){
+    .order{
+     padding-left: 0;
+        
+        &__wrapper{
+            justify-content: center;
+        }
+        &__descr{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title{
+            margin-top: 30px;
+            text-align: center;
+            width: 194px;
+          
+        }
+        &__image{
+            display: none;
+        }
+    }
+} 

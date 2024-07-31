@@ -1,0 +1,97 @@
+.header {
+	padding: 26px 10px 31px 20px;
+	min-height: 77px;
+	background: linear-gradient(
+		224.42deg,
+		rgba(46, 49, 146, 0.7) 0%,
+		rgba(212, 20, 90, 0.7) 98.165%
+	);
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+    align-items: center;
+		color: white;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	&__solution {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../icons/phone.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 17px;
+			height: 17px;
+			top: 0;
+			left: -10px;
+		}
+	}
+	&__number {
+		margin-left: 15px;
+	}
+	&__city {
+    margin-right: 100px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../icons/navigation.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 15px;
+			height: 25px;
+			top: -5px;
+			left: -20px;
+		}
+	}
+  &__instagramm{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      		background-image: url('../icons/instagramm.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 30px;
+			height: 28px;
+			top: 2px;
+			left: -40px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+	.header{
+		padding: 26px 20px 31px 30px;
+		&__solution{
+			display: flex;
+			flex-direction: column;
+			&::before{
+				top: 8px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px){
+	.header{
+		&__inner{
+			flex-direction: column;
+			gap: 10px;
+		}
+		&__city{
+			margin-right: 0;
+		}
+		&__instagramm{
+			margin-left: 35px;
+			&::before{
+				top: -6px;
+			}
+			br{
+				display: none;
+			}
+		}
+	}
+}

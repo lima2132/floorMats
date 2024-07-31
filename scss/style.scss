@@ -1,0 +1,15 @@
+body {
+	font-family: Roboto, sans-serif;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1260px;
+}
+
+@import './blocks/reset';
+@import './blocks/header';
+@import './blocks/order';
+@import './blocks/blockquote';
+@import './blocks/description';
+@import './blocks/reviews';
+@import './blocks/footer';
